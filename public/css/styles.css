@@ -1,0 +1,467 @@
+* {
+    font-family: 'Roboto';
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #212121;
+    --input-background-color: #fff;
+    --input-text-color: rgb(78, 77, 77);
+    --navbar-font-color:  #757575;
+    --backgroud-card-modal: #fff;
+}
+
+.dark-theme {
+
+    --primary-color: #000106;
+    --secondary-color: #fff;
+    --input-background-color: rgb(101, 97, 97);
+    --input-text-color: rgb(214, 213, 213);
+    --navbar-font-color:  #d3d1d1;
+    --backgroud-card-modal: #353e48;
+
+}
+
+#navbar {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+header {
+    background-color: var(--primary-color);
+    border-bottom: 1px solid #ccc;
+}
+
+input {
+    background-color: var(--input-background-color) !important;
+    color: var(--input-text-color) !important;
+}
+
+textarea {
+    background-color: var(--input-background-color) !important;
+    color: var(--input-text-color) !important;
+}
+
+select {
+    background-color: var(--input-background-color) !important;
+    color: var(--input-text-color) !important;
+}
+
+::placeholder {
+    color: var(--input-text-color) !important;
+}
+
+.bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: var(--primary-color) !important;
+}
+
+.bg-white {
+    background-color: var(--backgroud-card-modal) !important;
+    color: var(--secondary-color) !important;
+}
+
+.text-gray-700 {
+    --tw-text-opacity: 1;
+    color: var(--secondary-color) !important;
+}
+
+.text-gray-600 {
+    --tw-text-opacity: 1;
+    color: var(--secondary-color) !important;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+}
+
+.btn-primary:hover {
+    background-color: #c28008;
+    border-color: #c28008;
+}
+
+.msg {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+#navbar img {
+    width: 170px;
+    margin-left: 10px;
+}
+
+#img-x {
+    width: 300px;
+    height: 112px;
+}
+#navbar {
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 5px 0;
+    margin-right: 10px;
+
+}
+
+#navbar a {
+    font-size: 18px;
+    color: var(--navbar-font-color);
+}
+
+#navbar a:hover {
+    color: #f2a340;
+}
+
+#search-container {
+    background-image: url("../img/audience.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1 {
+    color: #f2a340;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#search-container form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#events-container {
+    padding: 50px;
+}
+
+#events-container h2 {
+    margin-bottom: 10px;
+}
+
+#events-container .subtitle {
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.card .card-date {
+    font-size: 12px;
+    color: #888787;
+}
+
+.card .card-title {
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-participants {
+    font-size: 14px;
+    color: #757575;
+}
+
+#event-create-container {
+    padding: 30px;
+}
+
+#event-create-container label {
+    font-weight: bold;
+}
+
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea {
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+    background-color: #353e48;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+}
+
+.img-footer {
+    width: 170px !important;
+    margin-left: 10px !important;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+#image-container,
+#info-container {
+    margin-top: 30px;
+}
+
+#image-container img {
+    border-radius: 10px;
+}
+
+#info-container h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3,
+#description-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon {
+    font-size: 20px;
+    color: #f2a340;
+    margin-right: 10px;
+}
+
+#info-container #event-submit {
+    margin: 20px 0;
+}
+
+#items-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li {
+    display: flex;
+}
+
+#description-container {
+    margin-top: 30px;
+}
+
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-title-container {
+    width: 25%;
+}
+
+/* Card */
+
+#cards-container {
+    display: flex;
+}
+
+#events-container .card {
+    flex: 1 1 25%;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 5px;
+    
+}
+
+
+#events-container img {
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.wrapper { float: left; clear: left; display: table; table-layout: fixed; }
+img.img-responsive { display: table-cell; max-width: 100%; }
+
+.img-200-200 {
+    width: 200px; 
+ }
+
+ .form-switch {
+    padding-left: 2.5em !important;
+    margin-top: 4px !important;
+    font-size: 20px !important;
+}
+
+.dashboard-events-container form {
+    display: inline-block;
+}
+
+.img-preview {
+    width: 300px;
+    height: 168px;
+    margin-top: 15px;
+    border: 1px solid #c5c5c5 !important;
+    border-radius: 20px !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 481px !important;
+}
+
+.form-control {
+    border: 1px solid #c5c5c5;
+    border-radius: 20px;
+}
+
+.rounded-md {
+    border: 1px solid #c5c5c5 !important;
+    border-radius: 20px !important;
+}
+
+/* botão sol e lua */
+
+#icon {
+    width: 30px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+#info-container .already-joined-msg {
+    margin: 15px 0;
+    color: #004085;
+    background-color: #CCE5FF;
+    border: 1px solid #88DAFF;
+    padding: 10px;
+    width: 275px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    padding: 20px 10px !important;
+    width: 200px !important;
+    background-color: #333 !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    display: block !important;
+    margin-top: 10px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    transition: .15s !important;
+    border: 1px solid #333 !important;
+    border: 1px solid #c5c5c5 !important;
+    border-radius: 20px !important;
+} 
+
+.file-label:hover {
+    color: #333 !important;
+    background: #fff !important;
+}
+
+/* Botão Top */
+.scrollToTop{   
+    position:fixed;
+    top:75px; 
+    right:40px;
+    display:none;
+}
+
+#scrollToTop {
+    bottom: 0px;
+    color: var(--color-bottom-top);
+    cursor: pointer;
+    display: none;
+    font-family: verdana;
+    font-size: 11px;
+    padding: 5px;
+    position: fixed;
+    right: 5px;
+    text-align: center;
+    width: 100px;
+    z-index: 99999;
+    opacity: 0.4;
+    font-size:70px;
+}
+
+.scrollToTop:hover {
+    color: rgb(251, 251, 253);
+}
+
+.ion_scrollToTop {
+    font-size:70px;
+}
+
+.ion_scrollToTop:hover {
+    color: rgb(251, 251, 253);
+    font-size:70px;
+}
+
+.miniatura {
+    width: 300px;
+    height: 168px;
+    margin-top: 15px;
+    border: 1px solid #c5c5c5 !important;
+    border-radius: 20px !important;
+  }
+
+  .bot_cont {
+    position: absolute;
+    bottom: 15px;
+    margin-left: -55px;
+}
+
+/* .bot_participants {
+    position: absolute;
+    bottom: 50px;
+    margin-left: -55px;
+    text-align: center;
+
+} */
+
+
+.social {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+.ion-icon-social {
+    margin: 5px;
+    color: rgb(194, 194, 196);
+    font-size: 40px;
+    transition: .15s !important;
+}
+
+.ion-icon-social:hover {
+    color: rgb(251, 251, 253);
+    font-size: 50px;
+    
+}
