@@ -9,6 +9,7 @@
     --input-text-color: rgb(78, 77, 77);
     --navbar-font-color:  #757575;
     --backgroud-card-modal: #fff;
+    --color-bottom-top: rgb(20 123 128);
 }
 
 .dark-theme {
@@ -19,10 +20,11 @@
     --input-text-color: rgb(214, 213, 213);
     --navbar-font-color:  #d3d1d1;
     --backgroud-card-modal: #353e48;
+    --color-bottom-top: rgb(250, 252, 252);
 
 }
 
-#navbar {
+#navbarTogglerDemo02 {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
@@ -110,7 +112,23 @@ select {
     margin-bottom: 15px;
 }
 
+.nav-logo {
+    width: 170px;
+    margin-left: 10px;
+}
+
 #navbar img {
+    width: 170px;
+    margin-left: 10px;
+}
+
+#navbarTogglerDemo02 img {
+    width: 170px;
+    margin-left: 10px;
+}
+
+#navbarTogglerDemo02 {
+    justify-content: space-between;
     width: 170px;
     margin-left: 10px;
 }
@@ -119,7 +137,7 @@ select {
     width: 300px;
     height: 112px;
 }
-#navbar {
+#navbarTogglerDemo02 {
     justify-content: space-between;
     background-color: var(--primary-color);
     padding: 5px 0;
@@ -127,12 +145,12 @@ select {
 
 }
 
-#navbar a {
+#navbarTogglerDemo02 a {
     font-size: 18px;
     color: var(--navbar-font-color);
 }
 
-#navbar a:hover {
+#navbarTogglerDemo02 a:hover {
     color: #f2a340;
 }
 
@@ -342,8 +360,14 @@ img.img-responsive { display: table-cell; max-width: 100%; }
 
 /* botão sol e lua */
 
-#icon {
-    width: 30px;
+.icon_lua {
+    width: 10px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.icon_lua:hover {
+    width: 10px;
     margin-right: 25px;
     cursor: pointer;
 }
@@ -417,7 +441,7 @@ input[type="file"] {
 }
 
 .ion_scrollToTop:hover {
-    color: rgb(251, 251, 253);
+    
     font-size:70px;
 }
 
@@ -464,4 +488,23 @@ input[type="file"] {
     color: rgb(251, 251, 253);
     font-size: 50px;
     
+}
+
+.modal-title {
+    color: #1D858C;
+    font-weight: 700;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: var(--input-background-color) !important;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
 }
