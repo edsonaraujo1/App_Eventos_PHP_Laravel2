@@ -8,6 +8,7 @@
     "sair":"Exit",
     "cadastrar":"Register",
     "entrar":"Open",
+    "Contato":"Contact",
     "buscar":"Search an Event",
     "proximo":"Next events",
     "procurar":"Search",
@@ -43,7 +44,43 @@
     "Confirmar Presença": "Confirm Presence",
     "O Evento conta com": "The event has",
     "Sobre o Evento": "About the Event",
-    "Imagem do Evento": "Event Image"
+    "Imagem do Evento": "Event Image",
+    "Todos os direitos Reservados": "All rights reserved",
+    "Termo de Privacidade": "Privacy Statement",
+    "Copyright": "Copyright",
 
+    "Política de Privacidade":"Privacy Policy",
+
+    "Privacidade titulo 1":"1 - WHAT SHALL WE DO WITH THIS INFORMATION?",
+    "Privacidade texto 1":"When you carry out any transaction with our store, as part of the purchase and sale process, we collect the personal information you give us, such as: name, email and address. When you access our website, we also automatically receive your computer's internet protocol, IP address, in order to obtain information to help us learn about your browser and operating system. Email Marketing will only be carried out if you allow it. In these emails you can receive news about our store , new products and other updates.",
+
+    "Privacidade titulo 2":"2 - CONSENT",
+    "Privacidade texto 2":"How do you get my consent? When you provide personal information such as name, phone number and address, to complete: a transaction, verify your credit card, place an order, arrange a delivery, or return a purchase. After by taking actions we understand that you consent to the collection of data for our company to use. If we ask for your personal information for a secondary reason, such as marketing, we will ask you directly for your consent, or provide you with the opportunity to say no. And if you want to withdraw your consent, how to proceed? If after you provide us with your data, you change your mind, you can withdraw your consent so that we can contact you, for continued data collection, use or disclosure of your information, at any time, by contacting us at utyum@utyum.com.br or by sending us a correspondence at: Utyum Intelligent Systems - Rua Céara - CEP - 110 65-430 - Santos - São Paulo",
+
+    "Privacidade titulo 3":"3 - DISCLOSURE",
+    "Privacidade texto 3":"We may disclose your personal information if we are required by law to do so or if you violate our Terms of Service.",
+
+    "Privacidade titulo 4":"4 - THIRD PARTY SERVICES",
+    "Privacidade texto 4":"In general, the third-party providers used by us will only collect, use and disclose your information to the extent necessary to enable them to perform the services they provide to us. However, certain third-party service providers, such as like payment gateways and other payment transaction processors, have their own privacy policies with respect to the information we are required to provide to them from your purchase-related transactions. you can understand the way in which your personal information will be used by these providers. In particular, remember that certain providers may be located in or have facilities that are located in different jurisdictions than you or us. So if you want to continue with a transaction involving the services of a third-party service provider, so your info rmations may become subject to the laws of the jurisdiction(s) in which the service provider or its facilities are located. As an example, if you are located in Canada and your transaction is processed by a payment gateway located in the United States, then your personal information used to complete that transaction may be subject to disclosure under United States law, including the Patriot Act . Once you leave our store's website or are redirected to a third-party app or website, you will no longer be bound by this Privacy Policy or our website's Terms of Service.",
+
+    "Privacidade titulo 4a":"Links",
+    "Privacidade texto 4a":"When you click on links in our store, they may direct you away from our site. We are not responsible for the privacy practices of other sites and we encourage you to read their privacy statements.",
+
+    "Privacidade titulo 5":"5 - SECURITY",
+    "Privacidade texto 5":"To protect your personal information, we take reasonable precautions and follow industry best practices to ensure that it is not inappropriately lost, misused, accessed, disclosed, altered, or destroyed. If you provide us with your information. card, this information is encrypted using secure socket layer (SSL) technology and stored with AES-256 encryption. Although no method of transmission over the Internet or electronic storage is 100% secure, we follow all PCI-DSS requirements and implement additional generally accepted industry standards.",
+
+    "Privacidade titulo 6":"6 - CHANGES TO THIS PRIVACY POLICY",
+    "Privacidade texto 6":"We reserve the right to modify this privacy policy at any time, so please review it frequently. Changes and clarifications will take effect immediately upon posting on the site. If we make material changes to this policy, we will notify you here that they have been updated so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we use and/or disclose it. If our store is acquired or merged with another company, your information may be transferred to the new owners so that we can continue to sell products to you.",
+    "Fechar":"Close",
+
+    "Envie o seu contato":"Send your contact",
+    "Preencha os dados corretamnte!":"Fill in the data correctly!",
+    "Obrigado!":"Thank you",
+    "Nome":"Name",
+    "Mensagem":"Message",
+    "Enviar":"Send",
+    "Seu Nome":"Your Name",
+    "Seu Email":"Your Email",
+    "Digite uma mensagem":"Enter a message"
 
 }

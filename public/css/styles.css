@@ -3,30 +3,61 @@
 }
 
 :root {
-    --primary-color: #fff;
+    --primary-color: rgb(229 225 225);
     --secondary-color: #212121;
     --input-background-color: #fff;
     --input-text-color: rgb(78, 77, 77);
     --navbar-font-color:  #757575;
     --backgroud-card-modal: #fff;
     --color-bottom-top: rgb(20 123 128);
+    --backgroud-card-color: #fff;
+    --text-card-color: #212121;
+    --card-date-text-color: #888787;
+    --card-title-text-color: #212121;
+    --card-participant-text-color: #757575;
+    --modal-container-background: #fff;
+    --modal-text-color: #212121;
+    --nav-bar-backgroud: rgb(248, 248, 248);
+    --nav-bar-links-bachgroud: rgb(248, 248, 248);
+
 }
 
 .dark-theme {
 
-    --primary-color: #000106;
+    --primary-color: #262627;
     --secondary-color: #fff;
     --input-background-color: rgb(101, 97, 97);
     --input-text-color: rgb(214, 213, 213);
     --navbar-font-color:  #d3d1d1;
     --backgroud-card-modal: #353e48;
     --color-bottom-top: rgb(250, 252, 252);
+    --backgroud-card-color: #565353;
+    --text-card-color: rgb(250, 252, 252);
+    --card-date-text-color: #cecccc;
+    --card-title-text-color: #d5d3d3;
+    --card-participant-text-color: #cecccc;
+    --modal-container-background: #403f3f;
+    --modal-text-color: #ccc;
+    --nav-bar-backgroud: #403f3f;
+    --nav-bar-links-bachgroud: #403f3f;
 
 }
 
+.modal-content {
+  background-color: var(--modal-container-background);
+}
+
+.modal-body {
+    color: var(--modal-text-color) !important;
+}
+
 #navbarTogglerDemo02 {
-    background-color: var(--primary-color);
+    background-color: var(--nav-bar-backgroud) !important;
     color: var(--secondary-color);
+}
+
+.navbar {
+    background-color: var(--nav-bar-backgroud) !important;
 }
 
 body {
@@ -91,6 +122,7 @@ select {
 .btn-primary {
     background-color: #f2a340;
     border: 2px solid #c28008;
+    border-radius: 18.5px;
 }
 
 .btn-primary:hover {
@@ -189,11 +221,11 @@ select {
 
 .card .card-date {
     font-size: 12px;
-    color: #888787;
+    color: var(--card-date-text-color) !important;
 }
 
 .card .card-title {
-    color: #212121;
+    color: var(--card-title-text-color) !important;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -201,7 +233,8 @@ select {
 
 .card-participants {
     font-size: 14px;
-    color: #757575;
+    color: var(--card-participant-text-color) !important;
+    margin-top: -21px;
 }
 
 #event-create-container {
@@ -215,7 +248,7 @@ select {
 #event-create-container input,
 #event-create-container select,
 #event-create-container textarea {
-    font-size: 12px;
+    /* font-size: 12px; */
 }
 
 footer {
@@ -303,10 +336,12 @@ footer p {
 
 #events-container .card {
     flex: 1 1 25%;
-    max-width: 25%;
+    height: 450px;
     border-radius: 10px;
     padding: 0;
     margin: 5px;
+    background-color: var(--backgroud-card-color);
+    color: var(--text-card-color);
     
 }
 
@@ -364,6 +399,7 @@ img.img-responsive { display: table-cell; max-width: 100%; }
     width: 10px;
     margin-right: 25px;
     cursor: pointer;
+    margin-top: 6px;
 }
 
 .icon_lua:hover {
@@ -480,13 +516,13 @@ input[type="file"] {
 .ion-icon-social {
     margin: 5px;
     color: rgb(194, 194, 196);
-    font-size: 40px;
+    font-size: 36px;
     transition: .15s !important;
 }
 
 .ion-icon-social:hover {
     color: rgb(251, 251, 253);
-    font-size: 50px;
+    font-size: 60px;
     
 }
 
@@ -507,4 +543,13 @@ input[type="file"] {
     background-color: var(--input-background-color) !important;
     border: 1px solid transparent;
     border-radius: 0.25rem;
+}
+
+.jumbotron {
+    background-color: var(--backgroud-card-modal) !important;
+    border-radius: 0.5rem;
+}
+
+.pular-linha {
+    margin-top: 25px !important;
 }

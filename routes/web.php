@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 use Illuminate\Support\Facades\Session;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create'])->middleware('auth');
@@ -33,6 +34,9 @@ Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('aut
 Route::post('/events/join/{id}', [EventController::class, 'joinEvent'])->middleware('auth');
 
 Route::delete('/events/leave/{id}', [EventController::class, 'leaveEvent'])->middleware('auth');
+
+Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/contact', [ContactController::class, 'store']);
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');

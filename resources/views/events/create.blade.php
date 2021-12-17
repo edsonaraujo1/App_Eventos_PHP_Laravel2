@@ -3,8 +3,9 @@
 @section('title', 'Plataforma Utyum')
 
 @section('content')
-<div class="row">
-<div id="event-create-container" class="col-md-6 offset-md-3">
+<div class="container">
+<div class="row pular-linha">
+<div id="event-create-container" class="col-md-6 offset-md-3 jumbotron">
     <h1>Crie o seu evento</h1>
     <form action="/events" method="POST" enctype="multipart/form-data">
         @csrf
@@ -54,8 +55,10 @@
                 <input type="checkbox" name="items[]" value="Brindes"> Brindes
             </div>
         </div>
-        <input type="submit" class="btn btn-primary" value="Criar Evento">
+        <!-- <input type="submit" class="btn btn-primary" value="Criar Evento"> -->
+        <button type="submit" class="btn btn-primary " style="float: right; margin-top: 10px;">Criar Evento</button>
     </form>
+</div>
 </div>
 </div>
 @endsection

@@ -3,8 +3,9 @@
 @section('title', 'Editando: ' . $event->title)
 
 @section('content')
-<div class="row">
-<div id="event-create-container" class="col-md-6 offset-md-3">
+<div class="container">
+<div class="row pular-linha">
+<div id="event-create-container" class="col-md-6 offset-md-3 jumbotron">
     <h1>Editando: {{ $event->title }}</h1>
     <p>Autor: {{ $eventOwner['name'] }}</p>
     <form action="/events/update/{{ $event->id }}" method="POST" enctype="multipart/form-data">
@@ -56,8 +57,10 @@
                 <input type="checkbox" name="items[]" value="Brindes"> Brindes
             </div>
         </div>
-        <input type="submit" class="btn btn-primary" value="Salvar Auteração">
+        <!-- <input type="submit" class="btn btn-primary" value="Salvar Alteração"> -->
+        <button type="submit" class="btn btn-primary " style="float: right; margin-top: 10px;">Salvar Alteração</button>
     </form>
+</div>
 </div>
 </div>
 @endsection
