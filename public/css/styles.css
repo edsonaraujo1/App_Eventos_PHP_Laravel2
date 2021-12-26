@@ -19,6 +19,11 @@
     --modal-text-color: #212121;
     --nav-bar-backgroud: rgb(248, 248, 248);
     --nav-bar-links-bachgroud: rgb(248, 248, 248);
+    --page-link-color: #0c0c0c;
+    --page-link-background-color: #f5f7f9;
+    --page-link-background-active-color: #007bff;
+    --page-link-active-color: #fff;
+    --page-link-border-color: #787777;
 
 }
 
@@ -40,6 +45,11 @@
     --modal-text-color: #ccc;
     --nav-bar-backgroud: #403f3f;
     --nav-bar-links-bachgroud: #403f3f;
+    --page-link-color: #e9e6e6;
+    --page-link-background-color: #5b5c5c;
+    --page-link-background-active-color: #f2a340;
+    --page-link-active-color: #fff;
+    --page-link-border-color:#e9e6e6;
 
 }
 
@@ -208,6 +218,7 @@ select {
 
 #events-container {
     padding: 50px;
+    margin: 0 auto;
 }
 
 #events-container h2 {
@@ -552,4 +563,22 @@ input[type="file"] {
 
 .pular-linha {
     margin-top: 25px !important;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    margin: 0 auto !important;
+}
+
+.page-link {
+    color: var(--page-link-color) !important;
+    background-color: var(--page-link-background-color) !important;
+    border: 1px solid var(--page-link-border-color) !important;
+}
+
+.page-item.active .page-link {
+    color: var(--page-link-active-color) !important;
+    background-color: var(--page-link-background-active-color) !important;
+    border-color: #f8f9fb;
 }

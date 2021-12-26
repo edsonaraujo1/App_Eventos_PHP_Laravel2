@@ -25,7 +25,7 @@ class EventController extends Controller
 
         }else{
 
-            $events = Event::all();
+            $events = Event::latest()->paginate(6);
 
         }
 

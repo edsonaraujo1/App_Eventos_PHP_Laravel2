@@ -63,4 +63,10 @@
 </div>
 </div>
 </div>
+    @endsection
+
+@section('js')
+<script>
+CKEDITOR.replace('description', options);
+</script>
 @endsection

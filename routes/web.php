@@ -55,3 +55,6 @@ Route::put('/themes', function(Request $request) {
      Session::put('locale', $locale);
      return redirect()->back();
  });
+
+ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () { '\vendor\UniSharp\LaravelFilemanager\Lfm::routes()'; });
+ 
