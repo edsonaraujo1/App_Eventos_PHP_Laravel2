@@ -81,7 +81,15 @@
     "Enviar":"Enviar",
     "Seu Nome":"Seu Nome",
     "Seu Email":"Seu Email",
+
+    "Assunto":   "Assunto",
+    "Duvidas":   "Duvidas",
+    "Orçamento": "Orçamento",
+    "Suporte":   "Suporte",
+    "Sistema":   "Sistema",
+    "Empresa":   "Empresa",
+    "Site":      "Site",
+
     "Digite uma mensagem":"Digite uma mensagem"
-
-
+    
 }

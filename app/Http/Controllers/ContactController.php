@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Mail;
 use App\Mail\SendMail;
 use PhpParser\Node\Stmt\TryCatch;
+use Symfony\Contracts\Service\Attribute\Required;
 
 class ContactController extends Controller
 {
@@ -41,6 +42,7 @@ class ContactController extends Controller
         $request->validate([
             'nome' =>'required',
             'email' =>'required|email',
+            'assunto' => 'required',
             'mensagem' =>'required'
         ]);
 

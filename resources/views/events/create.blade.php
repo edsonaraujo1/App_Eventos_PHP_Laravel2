@@ -3,9 +3,12 @@
 @section('title', 'Plataforma Utyum')
 
 @section('content')
+<script src="/js/ckeditor/ckeditor.js"></script>
+<script src="/js/ckfinder/ckfinder.js"></script>
+
 <div class="container">
 <div class="row pular-linha">
-<div id="event-create-container" class="col-md-6 offset-md-3 jumbotron">
+<div id="event-create-container" class="jumbotron">
     <h1>Crie o seu evento</h1>
     <form action="/events" method="POST" enctype="multipart/form-data">
         @csrf
@@ -60,5 +63,14 @@
     </form>
 </div>
 </div>
+<p>&nbsp;</p>
 </div>
+
+<script type="text/javascript">
+                
+                CKEDITOR.replace( 'description', {
+                filebrowserBrowseUrl: '/js/ckfinder/ckfinder.html',
+                filebrowserUploadUrl: '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files'
+        });
+</script>
 @endsection

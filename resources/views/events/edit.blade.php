@@ -3,9 +3,11 @@
 @section('title', 'Editando: ' . $event->title)
 
 @section('content')
+<script src="/js/ckeditor/ckeditor.js"></script>
+<script src="/js/ckfinder/ckfinder.js"></script>
 <div class="container">
 <div class="row pular-linha">
-<div id="event-create-container" class="col-md-6 offset-md-3 jumbotron">
+<div id="event-create-container" class="jumbotron">
     <h1>Editando: {{ $event->title }}</h1>
     <p>Autor: {{ $eventOwner['name'] }}</p>
     <form action="/events/update/{{ $event->id }}" method="POST" enctype="multipart/form-data">
@@ -62,11 +64,18 @@
     </form>
 </div>
 </div>
+<p>&nbsp;</p>
 </div>
     @endsection
 
-@section('js')
-<script>
-CKEDITOR.replace('description', options);
+<!-- @section('js') -->
+
+<script type="text/javascript">
+                
+                CKEDITOR.replace( 'description', {
+                filebrowserBrowseUrl: '/js/ckfinder/ckfinder.html',
+                filebrowserUploadUrl: '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files'
+        });
 </script>
+
 @endsection

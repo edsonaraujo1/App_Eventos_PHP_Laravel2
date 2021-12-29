@@ -81,6 +81,15 @@
     "Enviar":"Send",
     "Seu Nome":"Your Name",
     "Seu Email":"Your Email",
+
+    "Assunto":   "Subject matter",
+    "Duvidas":   "You doubt",
+    "Orçamento": "Budget",
+    "Suporte":   "Support",
+    "Sistema":   "System",
+    "Empresa":   "Company",
+    "Site":      "site",
+
     "Digite uma mensagem":"Enter a message"
 
 }

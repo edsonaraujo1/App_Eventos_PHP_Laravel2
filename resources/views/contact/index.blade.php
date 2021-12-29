@@ -1,16 +1,16 @@
 @extends('layouts.main')
 
-@section('title', 'Plataforma Utyum')
+@section('title', 'Contato - Plataforma Utyum')
 
 @section('content')
 
 <div class="container">
     <div class="row pular-linha">
-        <div class="col-md-6 jumbotron mx-auto">
+        <div class="jumbotron mx-auto">
             <form action="/contact" method="POST">
                 @csrf
                 <div class="form-group">
-                    <h1>{{__('Envie o seu contato') }}</h1>
+                    <h1><ion-icon name="mail-outline"></ion-icon> - {{__('Envie o seu contato') }}</h1>
                 </div>
                 @if(count($errors) > 0)
                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -53,6 +53,18 @@
                     <input type="email" name="email" class="form-control" placeholder="{{__('Seu Email') }}">
                 </div>
                 <div class="form-group">
+                    <label for="title">{{__('Assunto') }}</label>
+                    <select class="form-control" id="assunto" name="assunto">
+                        <option value="Duvidas">{{__('Duvidas') }}</option>
+                        <option value="Orçamento">{{__('Orçamento') }}</option>
+                        <option value="Suporte">{{__('Suporte') }}</option>
+                        <option value="Contato">{{__('Contato') }}</option>
+                        <option value="Sistema">{{__('Sistema') }}</option>
+                        <option value="Empresa">{{__('Empresa') }}</option>
+                        <option value="Site">{{__('Site') }}</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label class="mensagem text-gray-700">{{__('Mensagem') }}</label>
                     <textarea name="mensagem" class="form-control" rows="5" placeholder="{{__('Digite uma mensagem') }}"></textarea>
                 </div>
@@ -65,6 +77,7 @@
             </form>
         </div>
     </div>
+    <p>&nbsp;</p>
 </div>
 
 @endsection

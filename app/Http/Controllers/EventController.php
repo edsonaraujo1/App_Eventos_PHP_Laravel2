@@ -21,7 +21,7 @@ class EventController extends Controller
 
             $events = Event::where([
                 ['title', 'like', '%'.$search.'%']
-            ])->get();
+            ])->paginate(6);
 
         }else{
 

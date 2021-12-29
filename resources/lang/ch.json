@@ -82,9 +82,24 @@
     "Enviar":"發送",
     "Seu Nome":"你的名字",
     "Seu Email":"你的郵件",
+
+    "Assunto":   "主題",
+    "Duvidas":   "你懷疑",
+    "Orçamento": "預算",
+    "Suporte":   "支持",
+    "Sistema":   "系統",
+    "Empresa":   "公司",
+    "Site":      "地點",
+
     "Digite uma mensagem":"輸入消息"
 
 }
+
+
+
+
+
+
 
 
   

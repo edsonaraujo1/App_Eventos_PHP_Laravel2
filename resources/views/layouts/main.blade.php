@@ -8,27 +8,20 @@
         <!-- Fontes Google -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
         <!-- Bootstrap -->
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
         <link rel='stylesheet' href='https://jacoblett.github.io/bootstrap4-latest/bootstrap-4-latest.min.css'>
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/bootstrap-dark.min.css" /> -->
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css"> -->
         <!-- ion icon -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <link rel="stylesheet" href="/css/styles.css">
-        <!-- <script src="/js/jquery-1.11.0.min.js"></script> -->
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"  crossorigin="anonymous"></script> -->
+        
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="/js/scripts.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+        <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/dark-mode.css">
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5/css/bootstrap-ie11.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@4/ie11CustomProperties.min.js"></script>
-         -->
+        <script src="/js/scripts.js"></script>
     </head>
     <body>
         
@@ -93,12 +86,8 @@
                         </li>
                         <li><img src="/img/moon.png" id="icon" class="icon_lua" style="width:30px;" ></li>
                     </ul>
-
                 </div>
-                
             </nav>
-
-        
         <main>
             <div class="container-fluid">
                 @if(session('msg'))
@@ -136,21 +125,9 @@
     </footer>
     <script src="/js/dark-mode.js"></script>
     <div id="scrollToTop"><ion-icon class="ion_scrollToTop" name="caret-up-circle-outline" alt="Ir para o Topo"></ion-icon></i></div>
-
-    <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
-    <script>
-        var options = {
-            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
-            filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=',
-            filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
-            filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
-        };
-    </script>
-    @yield('js')
+    <!-- @yield('js') -->
     </body>
 </html>
-
-
 <!-- Modal -->
 <div id="meuModal" class="modal fade" role="dialog">
   <div class="modal-dialog">

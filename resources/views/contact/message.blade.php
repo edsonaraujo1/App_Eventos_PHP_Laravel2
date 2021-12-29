@@ -2,4 +2,5 @@
 
 <p><strong>NOME: </strong> {{ $data['nome'] }}</p>
 <p><strong>EMAIL: </strong> {{ $data['email'] }}</p>
+<p><strong>ASSUNTO: </strong> {{ $data['assunto'] }}</p>
 <p><strong>MENSAGEM: </strong> {{ $data['mensagem'] }}</p>
