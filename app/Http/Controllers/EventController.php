@@ -39,16 +39,28 @@ class EventController extends Controller
 
     public function store(Request $request) {
 
+        $request->validate([
+            'credito' => 'required',
+            'title' => 'required',
+            'date' => 'required',
+            'city' => 'required',
+            'description' => 'required',
+            'fonte' => 'required',
+            'items' => 'required',
+        ]);
+
         $altura = "200";
 	    $largura = "300";
 
         $event = new Event;
 
+        $event->credito = $request->credito;
         $event->title = $request->title;
         $event->date = $request->date;
         $event->city = $request->city;
         $event->private = $request->private;
         $event->description = $request->description;
+        $event->fonte = $request->fonte;
         $event->items = $request->items;
 
         if($request->hasFile('image') && $request->file('image')->isValid()) {
@@ -78,6 +90,8 @@ class EventController extends Controller
              
             //  })->save(public_path('img/events/'.$imageName)); //salvando como image3.png
 
+        }else{
+            $event->image = 'imgdefault.png';
         }
 
         $user = auth()->user();
@@ -103,7 +117,7 @@ class EventController extends Controller
                 }
             }
         }
-
+        
         $event = Event::findOrFail($id);
 
         $eventOwner = User::where('id', $event->user_id)->first()->toArray();
@@ -180,6 +194,15 @@ class EventController extends Controller
             $img = \Image::make($requestImage);
             $img->resize(298, 169)->save(public_path('img/events/'.$imageName));
             $data['image'] = $imageName;
+
+            $manager = new ImageManager(array('driver' => 'GD'));
+
+            // Lendo Imagem
+            $imagetxt = $manager->make(public_path('img/events/'.$imageName));
+
+            $imagetxt->insert(public_path('img/watermark.png'), 'bottom-right', 10, 10);
+
+            $imagetxt->save(public_path('img/events/'.$imageName));
         }
 
         Event::findOrFail($request->id)->update($data);

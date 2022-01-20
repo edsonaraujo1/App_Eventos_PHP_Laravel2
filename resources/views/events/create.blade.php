@@ -10,7 +10,19 @@
 <div class="row pular-linha">
 <div id="event-create-container" class="jumbotron">
     <h1>Crie o seu evento</h1>
-    <form action="/events" method="POST" enctype="multipart/form-data">
+    {{--
+    @if($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach($errors->all() as $error)
+                <li>{{ $error}}</li> 
+            @endforeach
+        </ul>
+    </div>
+    @endif
+    --}}
+
+    <form action="/events" method="POST" data-toggle="validator" enctype="multipart/form-data" role="form">
         @csrf
         <div class="form-group">
         <label for="image" class="file-label">Imagem do Evento</label>
@@ -18,16 +30,34 @@
             <div class="galeria"></div>
         </div>
         <div class="form-group">
+            <label for="title">Creditos da Imagem</label>
+            <input type="text" class="form-control " id="credito" name="credito" 
+            data-error="Você deve preencher o campo credito!" placeholder="Digite o Credito da Imagem" required> 
+            <div class="help-block with-errors"></div>
+            <!--
+            @error('credito') is-invalid @enderror    
+            @error('credito')
+            <div class="invalid-feedback">
+                {{$message}}
+            </div>
+            @enderror -->
+
+
+        </div>
+        <div class="form-group">
             <label for="title">Evento</label>
-            <input type="text" class="form-control" id="title" name="title" placeholder="Nome do Evento">
+            <input type="text" class="form-control" id="title" name="title" placeholder="Nome do Evento" required>
+            <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
             <label for="title">Data do Evento</label>
-            <input type="date" class="form-control" id="date" name="date">
+            <input type="date" class="form-control" id="date" name="date" required >
+            <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
             <label for="title">Cidade</label>
-            <input type="text" class="form-control" id="city" name="city" placeholder="Local do Evento">
+            <input type="text" class="form-control" id="city" name="city" placeholder="Local do Evento" required>
+            <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
             <label for="title">O Evento e Privado?</label>
@@ -39,6 +69,11 @@
         <div class="form-group">
             <label for="title">Evento</label>
             <textarea class="form-control" id="description" name="description" rows="10" placeholder="O que vai acontecer no evento"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="title">Fonte da Matéria</label>
+            <input type="text" class="form-control" id="fonte" name="fonte" placeholder="Digite a fonte e os credito da matéria" required >
+            <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
             <label for="title">Adicionar itens de infraestrutura</label>

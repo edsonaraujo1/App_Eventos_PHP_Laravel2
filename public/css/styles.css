@@ -24,6 +24,7 @@
     --page-link-background-active-color: #007bff;
     --page-link-active-color: #fff;
     --page-link-border-color: #787777;
+    --table-text-color:#0c0c0c;
 
 }
 
@@ -50,7 +51,20 @@
     --page-link-background-active-color: #f2a340;
     --page-link-active-color: #fff;
     --page-link-border-color:#e9e6e6;
+    --table-text-color:#e9e6e6;
 
+}
+
+.table thead th {
+    border-bottom: 2px solid var(--input-text-color);
+}
+
+.table td, .table th {
+    border-top: 1px solid var(--input-text-color);
+}
+
+.table {
+    color: var(--table-text-color) !important;
 }
 
 .modal-content {
@@ -196,13 +210,35 @@ select {
     color: #f2a340;
 }
 
+#img-pessoa {
+    float: left;
+    position: absolute;
+    left: 76px;
+    top: 110px;
+    z-index: 1000;
+
+}
+
+#search {
+    margin-left: 66px;
+    margin-top: 14px;
+}
+
+.img-tamanho {
+    width: 200px;
+    height: 277px;
+    margin-left: -63px;
+}
+
 #search-container {
     background-image: url("../img/audience.jpg");
     background-size: cover;
     background-position: center;
-    height: 300px;
-    padding: 50px;
+    height: 303px;
+    padding: 0px;
     text-align: center;
+    margin-top: 1px;
+    color: #fff;
 }
 
 #search-container h1 {
@@ -347,7 +383,8 @@ footer p {
 
 #events-container .card {
     flex: 1 1 25%;
-    height: 450px;
+    height: 540px;
+    width: 100%;
     border-radius: 10px;
     padding: 0;
     margin: 5px;
@@ -582,4 +619,21 @@ input[type="file"] {
     color: var(--page-link-active-color) !important;
     background-color: var(--page-link-background-active-color) !important;
     border-color: #f8f9fb;
+}
+
+.credito-font {
+    font-size: 10px !important;
+    margin-left: 10px;
+}
+
+.with-errors {
+    font-size: 15px !important;
+    font-weight: bold;
+}
+
+.list-unstyled {
+    margin-top: -13px;
+    padding-left: 19px;
+    color: var(--red) !important;
+    list-style: circle;
 }

@@ -10,6 +10,7 @@
         <div class="row">
             <div id="image-container" class="col-md-6">
                 <img src="/img/events/{{ $event->image }}" class="img-fluid" alt="{{ $event->title }}">
+                <p class="credito-font">{{ $event->credito }}</p>
             </div>
             <div id="info-container" class="col-md-6">
                 <h1>{{ $event->title }}</h1>
@@ -40,6 +41,10 @@
             <div class="col-md-12" id="description-container">
                 <h3>{{ __('Sobre o Evento') }}:</h3>
                 <p class="event-description">{!! $event->description !!}</p>
+                <br />
+                @if($event->fonte != '')
+                   <p class="credito-font">Fonte: {{ $event->fonte }}</p>
+                @endif
             </div>
         </div>
     </div>

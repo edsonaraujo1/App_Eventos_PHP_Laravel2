@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/dark-mode.css">
         <script src="/js/scripts.js"></script>
+        <script src="/js/validator.js"></script>
     </head>
     <body>
         

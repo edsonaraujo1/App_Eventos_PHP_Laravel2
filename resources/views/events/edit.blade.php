@@ -10,25 +10,34 @@
 <div id="event-create-container" class="jumbotron">
     <h1>Editando: {{ $event->title }}</h1>
     <p>Autor: {{ $eventOwner['name'] }}</p>
-    <form action="/events/update/{{ $event->id }}" method="POST" enctype="multipart/form-data">
+    <form action="/events/update/{{ $event->id }}" method="POST" data-toggle="validator" enctype="multipart/form-data" role="form">
         @csrf
         @method('PUT')
         <div class="">
             <label for="image" class="file-label">{{__('Imagem do Evento')}}</label>
             <input type="file" class="form-control-file" id="image" name="image">
             <p><img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}" class="img-preview"></p>
+            <div class="galeria"></div>
+        </div>
+        <div class="form-group">
+            <label for="title">Credito da Imagem</label>
+            <input type="text" class="form-control" id="credito" name="credito" placeholder="Digite o Credito da Imagem" value="{{ $event->credito }}" required>
+            <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
             <label for="title">Evento</label>
-            <input type="text" class="form-control" id="title" name="title" placeholder="Nome do Evento" value="{{ $event->title }}">
+            <input type="text" class="form-control" id="title" name="title" placeholder="Nome do Evento" value="{{ $event->title }}" required>
+            <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
             <label for="title">Data do Evento</label>
             <input type="date" class="form-control" id="date" name="date" value="{{ $event->date->format('Y-m-d') }}">
+            <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
             <label for="title">Cidade</label>
-            <input type="text" class="form-control" id="city" name="city" placeholder="Local do Evento" value="{{ $event->city }}">
+            <input type="text" class="form-control" id="city" name="city" placeholder="Local do Evento" value="{{ $event->city }}" required>
+            <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
             <label for="title">O Evento e Privado?</label>
@@ -40,6 +49,11 @@
         <div class="form-group">
             <label for="title">Evento</label>
             <textarea class="form-control" id="description" name="description" rows="10" placeholder="O que vai acontecer no evento">{{ $event->description }}</textarea>
+        </div>
+        <div class="form-group">
+            <label for="title">Fonte da Matéria</label>
+            <input type="text" class="form-control" id="fonte" name="fonte" placeholder="Digite a fonte e os credito da matéria" value="{{ $event->fonte }}" required>
+            <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
             <label for="title">Adicionar itens de infraestrutura</label>

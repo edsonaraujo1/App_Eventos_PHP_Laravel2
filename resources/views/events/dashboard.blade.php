@@ -15,20 +15,23 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col"></th>
+                    <th scope="col">Nº</th>
                     <th scope="col">Nome</th>
                     <th scope="col">Participantes</th>
-                    <th scope="col">Ações</th>
+                    <th scope="col" style="text-align: center">Ações</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
         
             <tbody>
                 @foreach($events as $event)
                     <tr>
+                        <td style="text-align: center"><img class="card-img-top" src="/img/events/{{ $event->image }}" style="width: 66px; heigth: 37px;" ></td>
                         <td scropt="row">{{ $loop->index + 1 }}</td>
                         <td><a href="/events/{{ $event->id }}">{{ Str::limit($event->title, 30, $end='.......') }}</a></td>
                         <td>{{ count($event->users) }}</td>
-                        <td>
+                        <td style="text-align: center">
                             <a href="/events/edit/{{ $event->id }}" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>{{ __('Editar') }}</a>
                             <form action="/events/{{ $event->id }}" method="POST">
                                 @csrf
@@ -52,20 +55,23 @@
 <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                   <th scope="col"></th>
+                    <th scope="col">Nº</th>
                     <th scope="col">Nome</th>
                     <th scope="col">Participantes</th>
-                    <th scope="col">Ações</th>
+                    <th scope="col" style="text-align: center">Ações</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
         
             <tbody>
                 @foreach($eventsasparticipant as $event)
                     <tr>
+                    <td style="text-align: center"><img class="card-img-top" src="/img/events/{{ $event->image }}" style="width: 66px; heigth: 37px;" ></td>
                         <td scropt="row">{{ $loop->index + 1 }}</td>
                         <td><a href="/events/{{ $event->id }}">{{ Str::limit($event->title, 30, $end='.......') }}</a></td>
                         <td>{{ count($event->users) }}</td>
-                        <td>
+                        <td style="text-align: center">
                             <form action="/events/leave/{{ $event->id }}" method="POST">
                             @csrf
                             @method("DELETE")

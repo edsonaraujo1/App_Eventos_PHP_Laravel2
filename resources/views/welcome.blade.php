@@ -5,9 +5,12 @@
 @section('content')
 
 <div class="row" align="center">
+<div id="img-pessoa">
+    <img class="img-tamanho" src="/img/pessoa.png">
+</div>
 
 <div id="search-container" class="col-md-12">
-    <h1>{{__('buscar')}}</h1>
+    <h2>{{__('buscar')}}</h2>
     <form action="/" method="GET">
         <input type="text" id="search" name="search" class="form-control" placeholder="{{__('procurar')}}">
     </form>
@@ -26,7 +29,7 @@
         <div class="row row-cols-1">
     @endif
        @foreach($events as $event)
-       <div class="col mb-4">
+       <div class="col mb-3">
             <div class="card">
                 <img class="card-img-top" src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
                 <div class="card-body">

@@ -53,3 +53,59 @@ $(function() {
         visualizacaoImagens(this, 'div.galeria');
     });
     });
+
+
+    /* Função Validar */
+function validar() {
+  // pegando o valor do nome pelos names
+  var credito = document.getElementById("credito");
+  var title = document.getElementById("title");
+  var date = document.getElementById("date");
+  var city = document.getElementById("city");
+  var description = document.getElementById("description");
+  var fonte = document.getElementById("fonte");
+  var items = document.getElementById("items").checked;
+
+  // verificar se o nome está vazio
+  if (credito.value == "") {
+    alert("Nome não informado");
+
+    // Deixa o input com o focus
+    credito.focus();
+    // retorna a função e não olha as outras linhas
+    return;
+  }
+  if (title.value == "") {
+    alert("Sobrenome não informado");
+    title.focus();
+    return;
+  }
+  if (date.value == "") {
+    alert("E-mail não informado");
+    date.focus();
+    return;
+  }
+  if (city.value == "") {
+    alert("Senha não informada");
+    city.focus();
+    return;
+  }
+  if (description.value == "") {
+    alert("Telefone não informado");
+    description.focus();
+    return;
+  }
+  if (fonte.value == "") {
+    alert("CEP não informado");
+    fonte.focus();
+    return;
+  }
+  if (items.value == "") {
+    alert("CEP não informado");
+    items.focus();
+    return;
+  }
+  alert("Formulário enviado!");
+  // envia o formulário
+  //formulario.submit();
+}
