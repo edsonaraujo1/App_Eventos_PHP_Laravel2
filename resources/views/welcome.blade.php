@@ -5,11 +5,16 @@
 @section('content')
 
 <div class="row" align="center">
+<!--
 <div id="img-pessoa">
     <img class="img-tamanho" src="/img/pessoa.png">
 </div>
+-->
 
 <div id="search-container" class="col-md-12">
+    <div id="img-pessoa">
+        <img class="img-tamanho" src="/img/pessoa.png">
+    </div>
     <h2>{{__('buscar')}}</h2>
     <form action="/" method="GET">
         <input type="text" id="search" name="search" class="form-control" placeholder="{{__('procurar')}}">
@@ -35,7 +40,8 @@
                 <div class="card-body">
                     <p class="card-date">{{ date('d/m/Y', strtotime($event->date)) }}</p>
                     <h5 class="card-title">{{ Str::limit($event->title, 90, $end='.......') }}</h5>
-                    <p class="card-participants bot_participants">{{ count($event->users) }} {{__('participantes')}}</p><br><br><br>
+                    <p class="card-participants bot_participants">{{ count($event->users) }} {{__('participantes')}}</p>
+                    <p class="card-description bot_participants">{{ Str::limit(strip_tags(html_entity_decode($event->description)), 120, $end='...') }} {{__('participantes')}}</p>
                     <a href="/events/{{ $event->id }}" class="btn btn-primary bot_cont">{{__('sabermais')}}</a>
                 </div>
             </div>

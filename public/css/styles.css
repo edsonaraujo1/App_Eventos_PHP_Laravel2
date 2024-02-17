@@ -213,10 +213,9 @@ select {
 #img-pessoa {
     float: left;
     position: absolute;
-    left: 76px;
-    top: 110px;
+    left: 93px;
+    top: 28px;
     z-index: 1000;
-
 }
 
 #search {
@@ -286,6 +285,7 @@ select {
 
 #event-create-container {
     padding: 30px;
+    width: 100%;
 }
 
 #event-create-container label {
@@ -597,6 +597,7 @@ input[type="file"] {
     background-color: var(--backgroud-card-modal) !important;
     border-radius: 0.5rem;
     margin: 0 auto !important;
+    width: 100%;
 }
 
 .pular-linha {
